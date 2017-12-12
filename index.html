@@ -5,52 +5,68 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!--MAIN PAGE-->
-    <div class="wrapper">
-      <!--TOP LEFT-->
-      <div class="box topLeft">
-        <a href="#">About</a>
-        <a href="#">Store</a>
+    <!-- NAV BAR -->
+    <div id="nav">
+      <div id="navLeft">
+        <ul>
+          <li id="about"><a href="#">About</a></li>
+          <li id="store"><a href="#">Store</a></li>
+        </ul>
       </div>
+      <div id="navRight">
+        <ul>
+          <li id="gmail"><a href="#">Gmail</a><li>
+          <li id="images"><a href="#">Images</a><li>
+          <li id="apps"><a href="#"><img src="apps.png"></a><li>
+          <li id="signin"><a href="#"><img src="signIn.png"></a><li>
+        </ul>
+      </div>
+    </div>
+
 
       <!--LOGO-->
-      <div class="box mainLogo">
+      <div id="mainLogo">
         <img src="Glogo.png">
       </div>
 
-      <!--TOP RIGHT-->
-      <div class="box topRight">
-        <div class="box gmail">
-          <a href="#">Gmail</a>
-        </div>
-        <div class="box images">
-          <a href="#">Images</a>
-        </div>
-        <div class="box apps">
-          <a href="#"><img src="apps.png"></a>
-        </div>
-        <div class="box signin">
-          <a href="#"><img src="signIn.png"></a>
-        </div>
-      </div>
-
       <!--SEARCH BOX-->
-      <div class="box searchBox">
-        <input type="text" size="40">
-      </div>
-      <!--SEARCH AND LUCKY BUTTONS-->
-      <div class="box buttons">
-        <div><input type="submit" value="Google search"></div>
-        <div><input type="submit" value="I'm Feeling Lucky"></div>
-      </div>
-      <!--BOTTOM LEFT-->
-      <div class="box bottomLeft">
-          <a href="#">Advertising</a>
-          <a href="#">Business</a>
-      </div>
-      <!--BOTTOM RIGHT-->
+        <div id="searchBox">
+          <div id="search-bground">
+            <input type="text" size="40" class="searchText">
+            <a href="#" class="search-icon">
+              <img src="mic.png" id ="mic-pic">
+            </a>
+          </div>
+        </div>
 
-    </div>
+      <!--SEARCH AND LUCKY BUTTONS-->
+      <section class="buttons">
+        <div id="search">
+          <input type="submit" value="Google Search" class="button">
+        </div>
+        <div id="lucky">
+          <input type="submit" value="I'm Feeling Lucky" class="button">
+        </div>
+      </section>
+      <!--BOTTOM -->
+      <div id="foot">
+        <div id="footLeft">
+          <ul>
+            <li id="advertising"><a href="#">Advertising</a></li>
+            <li id="business"><a href="#">Business</a></li>
+          </ul>
+        </div>
+        <div id="footRight">
+          <ul>
+            <li id="privacy"><a href="#">Privacy</a><li>
+            <li id="terms"><a href="#">Terms</a><li>
+            <li id="settings"><a href="#">Settings<a/><li>
+          </ul>
+        </div>
+      </div>
+
+
+
   </body>
 
 

@@ -1,0 +1,111 @@
+/*WHOLE PAGE GRID*/
+.wrapper {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows:minmax(100px, auto);
+  justify-items:center;
+}
+
+/*GRID FOR SEARCH BOX*/
+.searchBox {
+  grid-column:2/4;
+  grid-row:3/4;
+
+}
+/*GRID FOR BUTTONS UNDER SEARCH BOX*/
+.buttons{
+  grid-column:2/4;
+  grid-row:4/5;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:10px;
+}
+/*GRID FOR TOP LEFT*/
+.topLeft{
+  grid-column:1;
+  align-self:start; /*holds stuff to top*/
+  justify-self:start; /*holds stuff to left*/
+  display:grid; /*grid for inside top left*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+}
+/*GRID FOR TOP RIGHT*/
+.topRight{
+  grid-column:4;
+  align-self:start; /*holds stuff to top*/
+  justify-self:end; /*holds stuff to right*/
+  display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:10px;
+    align-items:center;
+    justify-items: left;
+}
+/*GRID FOR TOP LOGO*/
+.mainLogo{
+  grid-column:2/4;
+  grid-row:2/3;
+}
+
+/*GRID FOR TOP BOTTOM LEFT*/
+.bottomLeft{
+  grid-column: 1/2;
+  grid-row:5;
+  align-self:end; /*holds stuff to bottom*/
+  justify-self:start; /*holds stuff to left*/
+  display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+a {
+  color:grey;
+  text-decoration: none;
+}
+
+
+.wrapper > div{
+  background:#eee;
+  padding:1em;
+}
+
+.wrapper > div:nth-child(odd){
+  background: #ddd;
+}
+.buttons > div{
+  border:#333 1px solid;
+  padding:1em;
+
+}
+
+.wrapper > div:nth-child(odd){
+  background: #ddd;
+}
+.mainLogo{
+}
+
+/*
+#pic {
+  margin: 0 auto;
+  border-style:dashed;
+  border-width:10px;
+  border-color:red;
+  width: 300px;
+  margin-top:200px;
+
+}
+
+p {
+  color:blue;
+}
+
+#searchStuff {
+  display:flex;
+  justify-content: center;
+  border-style:dashed;
+  border-width:5px;
+  border-color:purple;
+  margin-top:175px;
+
+  width:400px;
+}
